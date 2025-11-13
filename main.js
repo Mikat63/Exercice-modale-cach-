@@ -3,9 +3,9 @@ const paraContainer = document.querySelector("#para_container");
 
 showPara.addEventListener("click", function (event) {
   event.stopPropagation();
-  document.body.style.backgroundColor = "dimgray";
+  document.body.classList.remove("bg-white");
+  document.body.classList.add("bg-gray-500");
   paraContainer.classList.remove("hidden");
-  paraContainer.style.backgroundColor = "white";
 });
 
 paraContainer.addEventListener("click", function (event) {
@@ -13,6 +13,7 @@ paraContainer.addEventListener("click", function (event) {
 });
 
 document.addEventListener("click", function () {
-  document.body.style.backgroundColor = "white";
+  document.body.classList.remove("bg-gray-500");
+  document.body.classList.add("bg-white");
   paraContainer.classList.add("hidden");
 });
