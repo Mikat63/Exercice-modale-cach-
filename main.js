@@ -12,7 +12,7 @@ paraContainer.addEventListener("click", function (event) {
   event.stopPropagation();
 });
 
-document.body.addEventListener("click", function () {
+document.addEventListener("click", function () {
   document.body.style.backgroundColor = "white";
   paraContainer.classList.add("hidden");
 });
